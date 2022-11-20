@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700); /*esto importa la funcion para poner borde en las letras */
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Century Gothic', sans-serif;
+	text-align: center;
+}
+
+body {
+	background-image: url(../assets/fondopagina.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+}
+
+h2 {
+	text-align: center;
+	-webkit-text-stroke: 0.1px rgb(149, 150, 224); /*esto es para poner borde en las letras */
+  	color: rgb(0, 51, 153); 
+	font-size: 50px;
+
+}
+
+p {
+	text-align: center;
+	-webkit-text-stroke: 0.1px rgb(0, 0, 0); /*esto es para poner borde en las letras */
+  	color: rgb(0, 51, 153); 
+	font-size: 20px;
+}
+
+a:-webkit-any-link {
+    color: rgb(9, 175, 215);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* estilo div formulario*/
+.divRegistro{
+	width: 450px;
+	margin: auto;
+	background-color:#4c6875ec;
+	padding: 30px 15px;
+	border-radius: 10px;	
+	margin-top:	250px;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	box-sizing: border-box;
+	opacity: 0.9;
+}
+
+.inputReg{
+	width: calc(80% - 20px);
+	border: 3px solid rgb(58, 39, 39);
+	border-radius: 100px;
+	padding: 15px;
+	background-color:#8999a0ec;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 25px;
+	display: block;
+	margin-top: 10px;
+	color: rgb(14, 12, 12);
+}
+
+.inputReg:focus{
+	width: calc(90% - 05px);
+	border-color: bisque;
+}.inputReg:hover{
+	width: calc(90% - 05px);
+	border-color: bisque;
+}
+
+
+/*Estilo boton registrar*/
+button[type='submit']{
+	
+	display: inline-block; /* Estilo al boton de registrar */
+	background-color: rgb(9, 175, 215);
+	color: #fff;
+	width: calc(70% - 20px);
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none;
+	border-radius: 15px;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+    padding: 5px;
+    font-weight: 600;
+	font-size: 25px;
+    margin-top: 15px;
+    transition: all 0.5s; /* Estilo al boton de registrar */
+	vertical-align: middle
+}
+
+@media (max-width: 480px) {
+	form {
+		width: 100%;
+	}
+}
+
+.btnRegistrar:hover {
+	background-color: rgb(5, 86, 99);
+}
+  
+.btnRegistrar span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+.btnRegistrar span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+  
+.btnRegistrar:hover span {
+	padding-right: 25px;
+}
+  
+.btnRegistrar:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
